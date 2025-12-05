@@ -1,0 +1,139 @@
+/* src/components/Contact.css */
+.contact-section {
+  padding: 5rem 2rem;
+  background: #0d1224;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(102, 126, 234, 0.2);
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-value {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+  color: #667eea;
+}
+
+.contact-form-wrapper {
+  position: sticky;
+  top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .contact-form-wrapper {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .contact-icon {
+    margin: 0 auto;
+  }
+}
