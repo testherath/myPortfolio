@@ -1,0 +1,173 @@
+/* src/components/Contact.scss - SCSS Version with Mixins */
+@import '../styles/mixins';
+@import '../styles/variables';
+
+.contact-section {
+  padding: 5rem 2rem;
+  background: $darker;
+  color: white;
+
+  @include breakpoint(md) {
+    padding: 3rem 1rem;
+  }
+
+  @include breakpoint(sm) {
+    padding: 3rem 1rem;
+  }
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+
+  @include breakpoint(md) {
+    font-size: 2.5rem;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 2.5rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: $muted;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+
+  @include breakpoint(lmd) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(102, 126, 234, 0.2);
+    transform: translateX(5px);
+  }
+
+  @include breakpoint(md) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  @include breakpoint(sm) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(md) {
+    margin: 0 auto;
+  }
+
+  @include breakpoint(sm) {
+    margin: 0 auto;
+  }
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.9rem;
+  color: $muted;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-value {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #667eea;
+  }
+}
+
+.contact-form-wrapper {
+  position: sticky;
+  top: 2rem;
+
+  @include breakpoint(lmd) {
+    position: static;
+  }
+
+  @include breakpoint(md) {
+    position: static;
+  }
+
+  @include breakpoint(sm) {
+    position: static;
+  }
+}

@@ -1,0 +1,25 @@
+// Color Variables
+$primary: #7dd3fc;
+$primary-dark: #0ea5e9;
+$secondary: #f472b6;
+$dark: #0f172a;
+$darker: #0d1224;
+$light: #f8fafc;
+$muted: #94a3b8;
+$card-bg: rgba(30, 41, 59, 0.4);
+$glass: rgba(255, 255, 255, 0.05);
+$gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+// CSS Custom Properties (for runtime theming if needed)
+:root {
+  --primary: #{$primary};
+  --primary-dark: #{$primary-dark};
+  --secondary: #{$secondary};
+  --dark: #{$dark};
+  --darker: #{$darker};
+  --light: #{$light};
+  --muted: #{$muted};
+  --card-bg: #{$card-bg};
+  --glass: #{$glass};
+  --gradient: #{$gradient};
+}

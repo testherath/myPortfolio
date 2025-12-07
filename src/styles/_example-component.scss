@@ -1,0 +1,66 @@
+// Example Component Styles
+// This demonstrates how to use the responsive mixins in your component SCSS files
+
+@import '../styles/mixins';
+@import '../styles/variables';
+
+.example-component {
+  padding: 2rem;
+  background: $card-bg;
+  margin-left: 50px;
+
+  // Using the responsive mixin for medium devices
+  @include breakpoint(md) {
+    margin-left: 0px !important;
+    padding: 1.5rem;
+  }
+
+  // Using the responsive mixin for small devices
+  @include breakpoint(sm) {
+    padding: 1rem;
+    margin-left: 0px !important;
+  }
+
+  // Using the responsive mixin for extra small devices
+  @include breakpoint(xs) {
+    padding: 0.5rem;
+  }
+
+  // Example for large devices
+  @include breakpoint(lg) {
+    padding: 2.5rem;
+  }
+
+  // Example for extra large devices
+  @include breakpoint(xl) {
+    padding: 3rem;
+  }
+
+  // Example for extra extra large devices
+  @include breakpoint(xxl) {
+    padding: 4rem;
+  }
+
+  // Example for iPhone 5 portrait
+  @include breakpoint(iphone-p-5) {
+    font-size: 0.875rem;
+  }
+
+  // Example for iPhone 6+ portrait
+  @include breakpoint(iphone-p-6-plus) {
+    font-size: 1rem;
+  }
+}
+
+.example-title {
+  font-size: 2rem;
+  color: $primary;
+
+  @include breakpoint(md) {
+    font-size: 1.5rem;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 1.25rem;
+  }
+}
