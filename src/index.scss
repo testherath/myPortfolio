@@ -196,6 +196,9 @@ nav {
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000px;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
 
   @include breakpoint(lmd) {
     width: 100%;

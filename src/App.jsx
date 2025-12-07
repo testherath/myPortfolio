@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ScrollPerformance from "./components/ScrollPerformance";
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,13 +18,13 @@ export default function App() {
       e.preventDefault();
       const targetId = e.target.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         const headerOffset = 80;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        
+
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
@@ -55,7 +54,7 @@ export default function App() {
     const throttleScroll = () => {
       let lastScrollTime = 0;
       const throttleDelay = 100; // ms
-      
+
       return () => {
         const now = Date.now();
         if (now - lastScrollTime >= throttleDelay) {
@@ -133,11 +132,9 @@ export default function App() {
           <p className="muted">Scroll to explore more.</p>
         </div>
 
-        <ScrollPerformance>
-          <div className="canvas-card">
-            <Hero />
-          </div>
-        </ScrollPerformance>
+        <div className="canvas-card">
+          <Hero />
+        </div>
       </main>
 
       {/* ABOUT */}
