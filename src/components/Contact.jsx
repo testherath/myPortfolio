@@ -8,19 +8,20 @@ const Contact = () => {
     { icon: '✉️', label: 'Email', value: 'buddhilalakshan12@gmail.com', href: 'mailto:buddhilalakshan12@gmail.com' },
     { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/buddhilaherath', href: 'https://linkedin.com/in/buddhilaherath' },
     { icon: '🐙', label: 'GitHub', value: 'github.com/gitbuddhila', href: 'https://github.com/gitbuddhila' },
-    { icon: '📍', label: 'Location', value: 'Sri Lanka' }
+    { icon: '📍', label: 'Location', value: 'Colombo, Sri Lanka', href: 'https://www.google.com/maps/place/Colombo,+Sri+Lanka' }
   ]
+
 
   return (
     <section id="contact" className="contact-section"><div className="contact-header">
-          <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">
-            Interested in collaborating or have a project in mind? Feel free to reach out!
-          </p>
-        </div>
+      <h2 className="section-title">Get In Touch</h2>
+      <p className="section-subtitle">
+        Interested in collaborating or have a project in mind? Feel free to reach out!
+      </p>
+    </div>
       <div className="contact-container">
-        
-        
+
+
         <div className="contact-content">
           {/* Left Side - Contact Info */}
           <div className="contact-info">
@@ -30,9 +31,9 @@ const Contact = () => {
                 <div className="contact-details">
                   <span className="contact-label">{item.label}</span>
                   {item.href ? (
-                    <a 
-                      href={item.href} 
-                      target="_blank" 
+                    <a
+                      href={item.href}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="contact-value"
                     >
@@ -45,7 +46,7 @@ const Contact = () => {
               </div>
             ))}
           </div>
-          
+
           {/* Right Side - Contact Form */}
           <div className="contact-form-wrapper">
             <ContactForm />
