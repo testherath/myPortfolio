@@ -169,8 +169,15 @@ nav a:hover::after {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Skills */
@@ -567,20 +574,20 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .hero-text {
     max-width: 100%;
   }
-  
+
   .h-title {
     font-size: 2.75rem;
   }
-  
+
   .canvas-card {
     width: 100%;
     height: 400px;
   }
-  
+
   .about-content {
     gap: 2rem;
   }
@@ -590,48 +597,48 @@ footer {
   .app {
     padding: 0 1rem;
   }
-  
+
   .header {
     padding: 1rem;
   }
-  
+
   nav ul {
     gap: 1rem;
   }
-  
+
   .h-title {
     font-size: 2.25rem;
   }
-  
+
   .section {
     padding: 4rem 0;
   }
-  
+
   .about-content {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .profile-image {
     width: 200px;
     height: 200px;
     margin: 0 auto;
   }
-  
+
   .about-stats {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-container {
     grid-template-columns: 1fr;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
@@ -643,32 +650,32 @@ footer {
     gap: 1rem;
     padding: 1rem;
   }
-  
+
   nav ul {
     gap: 0.75rem;
   }
-  
+
   .h-title {
     font-size: 1.75rem;
   }
-  
+
   .h-sub {
     font-size: 1rem;
   }
-  
+
   .canvas-card {
     height: 300px;
   }
-  
+
   .skill-card {
     padding: 1.5rem;
   }
-  
+
   .project-header,
   .project-body {
     padding: 1rem;
   }
-  
+
   .btn {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
@@ -680,7 +687,7 @@ footer {
   .fade-in {
     animation: none;
   }
-  
+
   .skill-card:hover,
   .project-card:hover,
   .timeline-item:hover,
