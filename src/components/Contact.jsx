@@ -1,6 +1,6 @@
 // src/components/Contact.jsx
 import ContactForm from './ContactForm'
-import './Contact.css'
+import './Contact.scss'
 
 const Contact = () => {
   const contactInfo = [
