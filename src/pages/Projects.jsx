@@ -50,8 +50,6 @@ export default function Projects() {
   return (
     <div id="projects" className="projects-container">
       <h2 className="section-title">Featured Projects</h2>
-      <p className="section-subtitle">A showcase of my recent work in web and mobile development</p>
-      
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
@@ -61,13 +59,13 @@ export default function Projects() {
             </div>
             <div className="project-body">
               <p>{project.description}</p>
-              
+
               <div className="tech-tags">
                 {project.technologies.map((tech, i) => (
                   <span className="tech-tag" key={i}>{tech}</span>
                 ))}
               </div>
-              
+
               <div className="project-links">
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <FaGithub /> View Code
