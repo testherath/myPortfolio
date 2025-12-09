@@ -1,25 +1,50 @@
-// Color Variables
-$primary: #7dd3fc;
-$primary-dark: #0ea5e9;
-$secondary: #f472b6;
-$dark: #0f172a;
-$darker: #0d1224;
-$light: #f8fafc;
-$muted: #94a3b8;
-$card-bg: rgba(30, 41, 59, 0.4);
-$glass: rgba(255, 255, 255, 0.05);
-$gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+// Color Variables - Enhanced Modern Palette
+$primary: #06b6d4;        // Vibrant cyan
+$primary-light: #22d3ee;  // Lighter cyan
+$primary-dark: #0891b2;   // Darker cyan
+$secondary: #f472b6;      // Pink accent
+$accent: #a78bfa;         // Purple accent
+$dark: #0f172a;           // Dark blue
+$darker: #020617;         // Almost black
+$light: #f8fafc;          // Off white
+$muted: #94a3b8;          // Muted blue-gray
+$card-bg: rgba(30, 41, 59, 0.5);
+$glass: rgba(255, 255, 255, 0.08);
 
-// CSS Custom Properties (for runtime theming if needed)
+// Gradients
+$gradient-primary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+$gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$gradient-mesh: radial-gradient(at 40% 20%, hsla(197, 100%, 63%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.1) 0px, transparent 50%);
+$gradient-text: linear-gradient(135deg, #f8fafc 0%, #06b6d4 100%);
+
+// Shadows & Glows
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.3);
+$glow-primary: 0 0 20px rgba(6, 182, 212, 0.3);
+$glow-hover: 0 0 30px rgba(6, 182, 212, 0.5);
+
+// Animation Timing
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// CSS Custom Properties (for runtime theming)
 :root {
   --primary: #{$primary};
+  --primary-light: #{$primary-light};
   --primary-dark: #{$primary-dark};
   --secondary: #{$secondary};
+  --accent: #{$accent};
   --dark: #{$dark};
   --darker: #{$darker};
   --light: #{$light};
   --muted: #{$muted};
   --card-bg: #{$card-bg};
   --glass: #{$glass};
-  --gradient: #{$gradient};
+  --gradient: #{$gradient-primary};
+  --gradient-hero: #{$gradient-hero};
+  --gradient-text: #{$gradient-text};
 }

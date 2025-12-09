@@ -1,7 +1,6 @@
 // src/App.jsx
 import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./components/Skills";
@@ -117,53 +116,109 @@ export default function App() {
   }
 
   return (
-    <div className="app">
-      {/* NAVBAR */}
+    <>
+      {/* NAVBAR - Outside app container for true sticky behavior */}
       <header className="header glass-header">
-        <div className="logo">Buddhila Herath</div>
-        <Nav />
+        <div className="header-content">
+          <div className="logo">Buddhila Herath</div>
+          <Nav />
+        </div>
       </header>
 
-      {/* HERO SECTION */}
-      <main className="main">
-        <div className="hero-text fade-in">
-          <h1 className="h-title">Hi — I'm <span className="accent">Buddhila Herath</span>, a Software Engineer.</h1>
-          <p className="h-sub">I build modern web apps, mobile applications, and interactive 3D experiences using React, Node.js, Java, & Three.js.</p>
-          <p className="muted">Scroll to explore more.</p>
-        </div>
+      <div className="app">
 
-        <div className="canvas-card">
-          <Hero />
-        </div>
-      </main>
+        {/* HERO SECTION */}
+        <main className="main">
+          {/* Animated Background Elements */}
+          <div className="hero-bg-gradient"></div>
+          <div className="floating-shapes">
+            <div className="shape shape-1"></div>
+            <div className="shape shape-2"></div>
+            <div className="shape shape-3"></div>
+          </div>
 
-      {/* ABOUT */}
-      <section id="about" className="section">
-        <About />
-      </section>
+          <div className="hero-content">
+            <div className="hero-text fade-in">
+              <div className="hero-badge">
+                <span className="badge-dot"></span>
+                Available for opportunities
+              </div>
+              <h1 className="h-title">
+                Hi, I'm <span className="accent gradient-text">Buddhila Herath</span>
+              </h1>
+              <h2 className="h-subtitle">Full-Stack Software Engineer</h2>
+              <p className="h-sub">
+                I craft modern web applications, mobile experiences, and interactive 3D worlds
+                using React, Node.js, Java, and Three.js. Let's build something amazing together.
+              </p>
 
-      {/* SKILLS */}
-      <section id="skills" className="section dark-section">
-        <Skills />
-      </section>
+              <div className="hero-cta">
+                <a href="#projects" className="btn btn-primary">
+                  <span>View My Work</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+                <a href="#contact" className="btn btn-outline">
+                  <span>Get In Touch</span>
+                </a>
+              </div>
 
-      {/* EXPERIENCE */}
-      <section id="experience" className="section">
-        <Experience />
-      </section>
+              <div className="hero-stats">
+                <div className="stat-item">
+                  <div className="stat-number">3+</div>
+                  <div className="stat-label">Years Experience</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">20+</div>
+                  <div className="stat-label">Projects Completed</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">10+</div>
+                  <div className="stat-label">Technologies</div>
+                </div>
+              </div>
+            </div>
 
-      {/* PROJECTS */}
-      <section id="projects" className="section dark-section">
-        <Projects />
-      </section>
+            <div className="hero-image-card">
+              <img
+                src="/src/assets/images/profile_imagee.jpg"
+                alt="Buddhila Herath"
+                className="hero-profile-image"
+              />
+              <div className="image-glow"></div>
+            </div>
+          </div>
+        </main>
 
-      {/* CONTACT */}
-      <section id="contact" className="section">
-        <Contact />
-      </section>
+        {/* ABOUT */}
+        <section id="about" className="section">
+          <About />
+        </section>
 
-      {/* FOOTER */}
-      <Footer />
-    </div>
+        {/* SKILLS */}
+        <section id="skills" className="section dark-section">
+          <Skills />
+        </section>
+
+        {/* EXPERIENCE */}
+        <section id="experience" className="section">
+          <Experience />
+        </section>
+
+        {/* PROJECTS */}
+        <section id="projects" className="section dark-section">
+          <Projects />
+        </section>
+
+        {/* CONTACT */}
+        <section id="contact" className="section">
+          <Contact />
+        </section>
+
+        {/* FOOTER */}
+        <Footer />
+      </div>
+    </>
   );
 }
