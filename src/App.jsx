@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -219,6 +220,7 @@ export default function App() {
         {/* FOOTER */}
         <Footer />
       </div>
+      <ScrollToTop />
     </>
   );
 }

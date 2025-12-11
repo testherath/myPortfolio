@@ -3,16 +3,16 @@
 @import '../styles/variables';
 
 .contact-section {
-  padding: 5rem 2rem;
+  padding: 0rem 2rem;
   background: $darker;
   color: white;
 
   @include breakpoint(md) {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   @include breakpoint(sm) {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 }
 

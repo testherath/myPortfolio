@@ -5,10 +5,6 @@ export default function About() {
       <h2 className="section-title">About Me</h2>
 
       <div className="about-content">
-        <div className="about-image">
-          <img src={profile} alt="Buddhila Herath" className="profile-image" />
-        </div>
-
         <div className="about-text">
           <p>
             I'm <strong>Buddhila Herath</strong>, a passionate Software
