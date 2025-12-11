@@ -1260,6 +1260,7 @@ nav {
   gap: 4rem;
   align-items: center;
   margin-top: 3rem;
+  text-align: justify;
 
   @include breakpoint(lmd) {
     gap: 3rem;
