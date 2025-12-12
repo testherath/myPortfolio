@@ -171,7 +171,7 @@ export default function App() {
                   <div className="stat-label">Years Experience</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">20+</div>
+                  <div className="stat-number">12+</div>
                   <div className="stat-label">Projects Completed</div>
                 </div>
                 <div className="stat-item">
@@ -183,7 +183,7 @@ export default function App() {
 
             <div className="hero-image-card">
               <img
-                src="/src/assets/images/profile_imagee.jpg"
+                src="/src/assets/images/mine.jpg"
                 alt="Buddhila Herath"
                 className="hero-profile-image"
               />
