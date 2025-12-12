@@ -20,7 +20,7 @@ const projects = [
     title: "GeoGlobe - Country Explorer",
     period: "Feb 2025 - July 2025",
     description: "React-based application to explore countries with real-time weather, news, and maps integration.",
-    technologies: ["React", "REST API", "Clerk Auth", "React Query", "Tailwind CSS"],
+    technologies: ["React", "REST API", "Clerk Auth", "React Query", "MUI"],
     github: "https://github.com/gitbuddhila/GeoGlobe"
   },
   {
@@ -44,7 +44,20 @@ const projects = [
     technologies: ["Spring Boot", "MongoDB", "REST API", "JWT", "React"],
     github: "https://github.com/gitbuddhila/Spring-FinanceTracker"
   },
-
+  {
+    title: "Melobea - Musical Store",
+    period: "Feb 2023 - July 2023",
+    description: "E-commerce platform for musical instruments and pre-owned musical items, featuring a clean, intuitive UI and fully responsive design.",
+    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    github: "https://github.com/gitbuddhila/Melobea"
+  },
+  {
+    title: "Eco Waste System",
+    period: "Jan 2024 - Apr 2024",
+    description: "Smart eco-waste management system. Enables to view waste collections, schedule pickups, track recycling activities and interact with sustainability features.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
+    github: "https://github.com/akilaManu-MaHiTo/eco-waste-client"
+  },
 ];
 
 export default function Projects() {
