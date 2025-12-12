@@ -54,7 +54,7 @@ const projects = [
   {
     title: "Eco Waste System",
     period: "Jan 2024 - Apr 2024",
-    description: "Smart eco-waste management system. Enables to view waste collections, schedule pickups, track recycling activities and interact with sustainability features.",
+    description: "Smart eco-waste management system. Enables to view waste collections, schedule pickups, track recycling activities interact with sustainability features.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
     github: "https://github.com/akilaManu-MaHiTo/eco-waste-client"
   },
