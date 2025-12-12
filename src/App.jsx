@@ -121,7 +121,16 @@ export default function App() {
       {/* NAVBAR - Outside app container for true sticky behavior */}
       <header className="header glass-header">
         <div className="header-content">
-          <div className="logo">Buddhila Herath</div>
+          <a
+            href="#"
+            className="logo"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
+            Buddhila Herath
+          </a>
           <Nav />
         </div>
       </header>
