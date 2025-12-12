@@ -51,10 +51,6 @@ export default function About() {
               <h3>2+</h3>
               <p>Years Experience</p>
             </div>
-            <div className="stat">
-              <h3>100%</h3>
-              <p>Client Satisfaction</p>
-            </div>
           </div>
         </div>
       </div>

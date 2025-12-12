@@ -24,6 +24,19 @@
 .contact-header {
   text-align: left;
   margin-bottom: 4rem;
+  margin-left: 4.5rem;
+
+  @include breakpoint(md) {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+  }
+
+  @include breakpoint(sm) {
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+
+  }
 }
 
 .section-title {
