@@ -155,7 +155,7 @@ nav {
   }
 
   @include breakpoint(sm) {
-    padding: 0rem 0 2rem;
+    padding: 6rem 0 2rem;
   }
 }
 
@@ -344,6 +344,7 @@ nav {
   margin-bottom: 1rem;
   color: $light;
   animation: fadeInUp 1s ease-out 0.3s both;
+  margin-top: 2rem;
 
   @include breakpoint(lmd) {
     font-size: 3rem;
@@ -355,6 +356,7 @@ nav {
 
   @include breakpoint(sm) {
     font-size: 2rem;
+    display: none;
   }
 }
 
@@ -553,8 +555,8 @@ nav {
   }
 
   @include breakpoint(sm) {
-    height: 350px;
-    max-width: 350px;
+    height: 280px;
+    max-width: 280px;
     margin: 0 auto;
   }
 }
@@ -628,6 +630,18 @@ nav {
 /* Animations */
 .fade-in {
   animation: fadeIn 1s ease-out;
+
+  @include breakpoint(lmd) {
+    margin-top: 3rem;
+  }
+
+  @include breakpoint(md) {
+    margin-top: 3rem;
+  }
+
+  @include breakpoint(sm) {
+    margin-top: 2rem;
+  }
 }
 
 @keyframes fadeIn {
