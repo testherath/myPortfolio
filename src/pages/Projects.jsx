@@ -7,28 +7,28 @@ const projects = [
     period: "Feb 2025 - July 2025",
     description: "Full-featured food delivery application with Docker, Microservices, and Spring Boot backend.",
     technologies: ["Spring Boot", "React", "Docker", "Microservices", "Tailwind CSS"],
-    github: "https://github.com/gitbuddhila/BiteUp"
+    github: "https://github.com/akilaManu-MaHiTo/biteup-gateway"
   },
   {
     title: "RideOn - Mobility Safety App",
     period: "July 2025 - Nov 2025",
     description: "Real-time ride tracking with safety alerts, off-route detection, and JWT authentication.",
     technologies: ["React Native", "Node.js", "MongoDB", "JWT", "WebSocket"],
-    github: "https://github.com/gitbuddhila/RideOn"
+    github: "https://github.com/SupunLiyanage88/RideOn"
   },
   {
     title: "GeoGlobe - Country Explorer",
     period: "Feb 2025 - July 2025",
     description: "React-based application to explore countries with real-time weather, news, and maps integration.",
     technologies: ["React", "REST API", "Clerk Auth", "React Query", "MUI"],
-    github: "https://github.com/gitbuddhila/GeoGlobe"
+    github: "https://github.com/gitbuddhila/geoglobe"
   },
   {
     title: "Swarna Bridalware Shop",
     period: "July 2024 - Nov 2024",
     description: "E-commerce platform for bridal sarees and accessories with intuitive UI and responsive design.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    github: "https://github.com/gitbuddhila/Bridal-Ware"
+    github: "https://github.com/gitbuddhila/Bridal_Ware_project"
   },
   {
     title: "MindMeld (Android App)",

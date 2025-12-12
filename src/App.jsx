@@ -192,7 +192,7 @@ export default function App() {
 
             <div className="hero-image-card">
               <img
-                src="/src/assets/images/mine.jpg"
+                src="images/mine.jpg"
                 alt="Buddhila Herath"
                 className="hero-profile-image"
               />
