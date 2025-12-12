@@ -10,7 +10,7 @@ export default function About() {
             I'm <strong>Buddhila Herath</strong>, a dedicated Software Engineering
             undergraduate at <strong>SLIIT</strong>, currently pursuing my BSc (Hons)
             in Information Technology specializing in Software Engineering. I'm
-            passionate about <strong>full-stack web and software development</strong>
+            passionate about <strong>full-stack web and software development </strong>
             and driven by the goal of building clean, scalable, and impactful digital
             solutions that improve everyday experiences.
           </p>
@@ -27,9 +27,8 @@ export default function About() {
           </p>
 
           <p>
-            I’m currently interning at <strong>CodeLantic (Pvt) Ltd</strong>, where I
-            contribute to real-world commercial projects while sharpening my skills in
-            <strong>Agile development, Docker, cloud technologies, CI/CD pipelines,
+            I contribute to real-world commercial projects while sharpening my skills in
+            <strong> Agile development, Docker, cloud technologies, CI/CD pipelines,
               and scalable software architecture</strong>. I thrive in collaborative
             environments and love taking ownership of challenges—from understanding user
             needs to delivering reliable features end-to-end.
@@ -49,7 +48,7 @@ export default function About() {
               <p>Projects Completed</p>
             </div>
             <div className="stat">
-              <h3>3+</h3>
+              <h3>2+</h3>
               <p>Years Experience</p>
             </div>
             <div className="stat">

@@ -7,7 +7,7 @@ export default function Experience() {
       title: "Software Development Intern",
       company: "CodeLantic (Pvt) Ltd",
       period: "Feb 2025 - Present",
-      description: "Collaborated with cross-functional teams in Agile environment to design, develop, and maintain applications. Assisted in troubleshooting to ensure high-quality, scalable, and reliable software solutions."
+      description: "Collaborated with cross-functional teams in Agile environment to design, develop, and maintain applications. Troubleshooting to ensure high-quality, scalable, and reliable software solutions."
     },
     {
       icon: <FaGraduationCap />,
