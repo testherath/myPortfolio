@@ -27,7 +27,7 @@ const projects = [
     title: "Swarna Bridalware Shop",
     period: "July 2024 - Nov 2024",
     description: "E-commerce platform for bridal sarees and accessories with intuitive UI and responsive design.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    technologies: ["React", "Node.js", "Express", "MongoDB", "CSS"],
     github: "https://github.com/gitbuddhila/Bridal_Ware_project"
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     title: "Finance Tracker System",
     period: "Feb 2025 - July 2025",
     description: "Comprehensive financial management system with secure RESTful API and JWT authentication.",
-    technologies: ["Spring Boot", "MongoDB", "REST API", "JWT", "React"],
+    technologies: ["Spring Boot", "SQL Workbench", "REST API", "JWT"],
     github: "https://github.com/gitbuddhila/Spring-FinanceTracker"
   },
   {
@@ -54,7 +54,7 @@ const projects = [
   {
     title: "Eco Waste System",
     period: "Jan 2024 - Apr 2024",
-    description: "Smart eco-waste management system. Enables to view waste collections, schedule pickups, track recycling activities interact with sustainability features.",
+    description: "Smart eco-waste management system. Enables to view waste collections, schedule pickups, track recycling activities and interact with sustainability.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
     github: "https://github.com/akilaManu-MaHiTo/eco-waste-client"
   },
