@@ -1,6 +1,6 @@
 /* src/components/Contact.scss - SCSS Version with Mixins */
-@import '../styles/mixins';
-@import '../styles/variables';
+@use '../styles/mixins' as *;
+@use '../styles/variables' as *;
 
 .contact-section {
   padding: 0rem 2rem;

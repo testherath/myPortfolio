@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import './styles/variables';
-@import './styles/mixins';
+@use './styles/variables' as *;
+@use './styles/mixins' as *;
 
 * {
   margin: 0;
@@ -605,7 +605,7 @@ nav {
   &.dark-section {
     background: rgba(15, 23, 42, 0.5);
     border-radius: 30px;
-    margin: 2rem 0;
+    margin: 4rem 0;
     padding: 4rem 2rem;
 
     @include breakpoint(sm) {
@@ -862,6 +862,7 @@ nav {
 
 .timeline-content {
   flex: 1;
+  text-align: left;
 
   h3 {
     margin-bottom: 0.5rem;
